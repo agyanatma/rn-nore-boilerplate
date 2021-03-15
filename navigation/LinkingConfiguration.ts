@@ -1,24 +1,9 @@
-import * as Linking from 'expo-linking';
+import * as Linking from "expo-linking";
 
+// deeplinking purpose
 export default {
-  prefixes: [Linking.makeUrl('/')],
-  config: {
-    screens: {
-      Root: {
-        screens: {
-          TabOne: {
-            screens: {
-              TabOneScreen: 'one',
-            },
-          },
-          TabTwo: {
-            screens: {
-              TabTwoScreen: 'two',
-            },
-          },
-        },
-      },
-      NotFound: '*',
+    prefixes: [Linking.makeUrl("/")],
+    config: {
+        screens: {},
     },
-  },
 };
